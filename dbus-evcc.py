@@ -137,9 +137,9 @@ class DbusEvccChargerService:
 
             # not really needed, but can be enabled
             voltage = 230 # adjust to your voltage
-            self._dbusservice['/Ac/L1/Power'] = float(loadpoint['chargeCurrents'][0]) * voltage # watt
-            self._dbusservice['/Ac/L2/Power'] = float(loadpoint['chargeCurrents'][1]) * voltage # watt
-            self._dbusservice['/Ac/L3/Power'] = float(loadpoint['chargeCurrents'][2]) * voltage # watt
+            #self._dbusservice['/Ac/L1/Power'] = float(loadpoint['chargeCurrents'][0]) * voltage # watt
+            #self._dbusservice['/Ac/L2/Power'] = float(loadpoint['chargeCurrents'][1]) * voltage # watt
+            #self._dbusservice['/Ac/L3/Power'] = float(loadpoint['chargeCurrents'][2]) * voltage # watt
             self._dbusservice['/Ac/Voltage'] = voltage
 
             self._dbusservice['/Ac/Power'] = float(loadpoint['chargePower']) # w
